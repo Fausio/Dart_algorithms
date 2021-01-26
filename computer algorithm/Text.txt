@@ -1,0 +1,14 @@
+---------------------semantics and syntax ---------------------
+semantics is what the phrase mians
+syntax  is how to write the phrase
+
+all program in dar most have one function called main,
+main is the principal function of the program, that the code run on it.
+
+for comments wi use //
+
+---------------------variables-----------------------------------
+var the_name_of_variale = the_value_of_variable ;
+to cocanete the variable wi use +
+--------------------------decision struture----------------------
+if(bolean_value){}
