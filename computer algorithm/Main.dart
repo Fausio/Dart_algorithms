@@ -14,10 +14,14 @@ main() {
   } else {
     print("You are child ♥");
   } */
+
+  CreateBtn("Loren txt", () {
+    print("object");
+  } );
 }
 
 //################ Anonymous function and optional paramiters ########################
-void CreateBtn(String text, Function thisfunc, Stream color) {
+void CreateBtn(String text, Function thisfunc, {String color = "" }) {
   print(text);
   print(color);
   thisfunc();
