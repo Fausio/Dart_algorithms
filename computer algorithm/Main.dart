@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io'; // to get extern values
 
 main() {
@@ -6,7 +5,7 @@ main() {
   // if the age is greater than or rqual to 18, ptint is adult, else print is child
   //print maior de idade, caso
 
-  print("################ Type on age ###################");
+/*   print("################ Type on age (using dart:io namospace)###################");
   var input = stdin.readLineSync();
   var age = int.parse(input!);
 
@@ -14,5 +13,12 @@ main() {
     print("You are adult");
   } else {
     print("You are child ♥");
-  }
+  } */
+}
+
+//################ Anonymous function and optional paramiters ########################
+void CreateBtn(String text, Function thisfunc, Stream color) {
+  print(text);
+  print(color);
+  thisfunc();
 }
