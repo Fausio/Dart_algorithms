@@ -14,7 +14,9 @@ double CalcSoma(double a, double b){
 // funcao que recebe dois valores como parametro e nao retona valores VOID
 void CalcSomaVoid(double a, double b){
   
-  print(a+b);
+  //forma de usar os parametros opcionais (largura:23.5)
+ Criarbtn("Usando a função",largura:23.5);
+
 }
 
 // funcao que nao recebe valores e nao retorna nada
@@ -27,8 +29,8 @@ String indoWithArrow() => "This if sparta !";
 
 
 // Funcao que recebe parametro opcional em (entre {})
-void Criarbtn(String txt, {String cor, double larguta}){
+void Criarbtn(String txt, {String cor, double largura}){
   print(txt);
   print(cor);
-  print(larguta);
+  print(largura);
 }
