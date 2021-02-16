@@ -24,3 +24,11 @@ void indo(){
 
 // funcao que retorna valores com a seta de modo a deixar o codigo legivel
 String indoWithArrow() => "This if sparta !";
+
+
+// Funcao que recebe parametro opcional em (entre {})
+void Criarbtn(String txt, {String cor, double larguta}){
+  print(txt);
+  print(cor);
+  print(larguta);
+}
