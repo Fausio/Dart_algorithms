@@ -21,3 +21,6 @@ void CalcSomaVoid(double a, double b){
 void indo(){
   print("This if sparta !");
 }
+
+// funcao que retorna valores com a seta de modo a deixar o codigo legivel
+String indoWithArrow() => "This if sparta !";
