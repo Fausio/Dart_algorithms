@@ -8,21 +8,14 @@ main() {
 /*   print("################ Type on age (using dart:io namospace)###################");
   var input = stdin.readLineSync();
   var age = int.parse(input!);
-
+    
   if (age >= 18) {
     print("You are adult");
   } else {
     print("You are child ♥");
   } */
-
-  CreateBtn("Loren txt", () {
-    print("object");
-  } );
+    print("Teste");
+ 
 }
 
-//################ Anonymous function and optional paramiters ########################
-void CreateBtn(String text, Function thisfunc, {String color = "" }) {
-  print(text);
-  print(color);
-  thisfunc();
-}
+ 
