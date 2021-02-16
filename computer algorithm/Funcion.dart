@@ -1,9 +1,17 @@
 void main(){
-double valor = CalcSoma(42.4,58.7);
-print(valor);
+
+
+  //forma de usar os parametros opcionais
+ Criarbtn("Usando a função",largura:23.5);
+
+// usando a funcao que recebe funcao como parametro
+ Criarbtn_dois("Usando a função",outraFuncao,largura:23.5);
+
+
+
 }
 
-
+//---------------------------------------------
 
 // funcao que retorna recebe dois valores e retona um valor Double
 double CalcSoma(double a, double b){
@@ -33,4 +41,25 @@ void Criarbtn(String txt, {String cor, double largura}){
   print(txt);
   print(cor);
   print(largura);
+}
+
+
+// Funcao que recebe parametro opcional em (entre {}) e valores padroes
+void Criarbtn_um(String txt, {String cor, double largura}){
+  print(txt);
+  print(cor ?? "Azul");
+  print(largura ?? 0.0);
+}
+
+
+Void outraFuncao(){
+  print("Outra funcao");
+}
+
+// Funcao que recebe funcao como parametro 
+void Criarbtn_dois(String txt, Function outraFunc, {String cor, double largura}){
+  print(txt);
+  print(cor ?? "Azul");
+  print(largura ?? 0.0);
+  outraFunc();
 }
