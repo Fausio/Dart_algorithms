@@ -7,7 +7,10 @@ void main(){
 // usando a funcao que recebe funcao como parametro
  Criarbtn_dois("Usando a função",outraFuncao,largura:23.5);
 
-
+// usado funcao anonima na funcao que recebe funcao como parametro
+ Criarbtn_dois("Usando a função",(){
+    print("Funao anonima que pertence a esse função");
+ });
 
 }
 
