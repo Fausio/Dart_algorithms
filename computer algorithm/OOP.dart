@@ -25,16 +25,21 @@ void main(List<String> args) {
   print(pessoa_um.Idade);
   print(pessoa_dois.Idade); */
 
-  Pessoa pessoa_tres = new Pessoa.Criaca(10);
-  print(pessoa_tres.Nome);
+  /*  Pessoa pessoa_tres = new Pessoa.Criaca(10);
+  print(pessoa_tres.Nome); */
+
+  Pessoa pessoa_quatro = new Pessoa("Fausio", 15);
+  pessoa_quatro.Idade = 5;
+  print(pessoa_quatro.Idade);
 }
 
 // Criação de classe em Dart
 class Pessoa {
   // propriedades
   String Nome;
-  int Idade;
-  double altura;
+  // os atributos e variaveis com underline significa que os mesmos nao podem ser acessados por fora é uma especie Geter privado
+  int _Idade;
+  double _altura;
 
   // metodos
   void dormir() {
@@ -42,16 +47,35 @@ class Pessoa {
   }
 
   void niver() {
-    Idade++;
+    _Idade++;
   }
 
   //construtor modo que o dart dá o outro é similar ao tipo c, como do java e c#
-  Pessoa(this.Nome, this.Idade);
+  Pessoa(this.Nome, this._Idade);
 
   //Construtor com nome ex:
-  Pessoa.Criaca(this.Idade) {
-    
+  Pessoa.Criaca(this._Idade) {
     this.Nome = "Enzo";
     print("A criança tem $Idade anos de idade");
+  }
+
+// criação de Get e set em Darte
+  int get Idade {
+    return _Idade;
+  }
+
+  set Idade(int idade) {
+    _Idade = idade;
+  }
+
+  double get altura {
+    return _altura;
+  }
+
+  // set com condição
+  set altura(double atr) {
+    if (atr > 0 && atr < 2) {
+      _altura = atr;
+    }
   }
 }
