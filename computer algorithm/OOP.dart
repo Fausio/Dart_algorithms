@@ -41,4 +41,7 @@ class Pessoa {
   void niver() {
     Idade++;
   }
+
+  //construtor modo que o dart dá o outro é similar ao tipo c, como do java e c#
+  Pessoa(this.Nome,this.Idade);
 }
