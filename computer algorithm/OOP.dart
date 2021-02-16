@@ -1,6 +1,6 @@
 void main(List<String> args) {
   // modo de instanciar em Dart, o new é opcional
-  Pessoa pessoa_um = new Pessoa();
+  /*  Pessoa pessoa_um = new Pessoa();
   pessoa_um.Nome = "Fáusio";
   pessoa_um.Idade = 58;
   pessoa_um.altura = 35.2;
@@ -23,7 +23,10 @@ void main(List<String> args) {
   pessoa_dois.niver();
 
   print(pessoa_um.Idade);
-  print(pessoa_dois.Idade);
+  print(pessoa_dois.Idade); */
+
+  Pessoa pessoa_tres = new Pessoa.Criaca(10);
+  print(pessoa_tres.Nome);
 }
 
 // Criação de classe em Dart
@@ -43,5 +46,12 @@ class Pessoa {
   }
 
   //construtor modo que o dart dá o outro é similar ao tipo c, como do java e c#
-  Pessoa(this.Nome,this.Idade);
+  Pessoa(this.Nome, this.Idade);
+
+  //Construtor com nome ex:
+  Pessoa.Criaca(this.Idade) {
+    
+    this.Nome = "Enzo";
+    print("A criança tem $Idade anos de idade");
+  }
 }
